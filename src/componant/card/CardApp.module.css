@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    outline: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F7F5FB;
+    margin: 50px auto;
+}
+
+.heroSection {
+    padding: 10px ;
+    width: calc(100% - 200px);
+    height: 524px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.image {
+    width: 45%;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F7F5FB;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rightSide {
+    width: 52%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: 20px;
+
+}
+
+.rightSide .headeing {
+    width: 90%;
+}
+
+.rightSide .headeing h1 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.rightSide .paragraph {
+    width: 90%;
+    margin-bottom: 200px;
+}
+
+.rightSide .paragraph p {
+    color: #908F8F;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.inp {
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px 181px 10px 10px;
+    color: #908F8F;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 10px;
+    border: 1px solid #B3B3B3;
+    
+}
+.errorMsg p{
+    color: #dc3545;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+button {
+    padding: 10px 120px 10px 129px;
+    color: #FFF;
+    border-radius: 10px;
+    background: #1A54FF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+.subscribed{
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+    margin-top: 80px;
+}
+.subscribed span{
+    padding: 10px 50px ;
+    color: #FFF;
+    border-radius: 10px;
+    background: #1A54FF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+}
+
+@media (min-width:768px) and (max-width:800px){
+    
+    .rightSide .headeing h1 {
+        font-size: 30px;
+    }
+    .rightSide .paragraph {
+        margin-bottom: 230px;
+    }
+    .rightSide .paragraph p {
+        font-size: 18px;
+    }
+    .image img {
+        object-fit: contain;
+    }
+    input {
+         padding: 10px 50px 10px 10px;
+    }
+    button {
+        padding: 10px 55px 10px 70px;
+    }
+    .subscribed span{
+        padding: 10px ;
+        
+    }
+}
+@media (min-width:425px) and (max-width:500px){
+    .heroSection {
+        padding: 10px ;
+        width: calc(100% - 40px);
+    }
+    .rightSide .headeing h1 {
+        font-size: 20px;
+    }
+    .rightSide .paragraph {
+        margin-bottom: 270px;
+    }
+    .rightSide .paragraph p {
+        font-size: 12px;
+    }
+    .image img {
+        object-fit: contain;
+    }
+    input {
+         padding: 10px 16px;
+         font-size: 13px;
+    }
+    button {
+        padding: 10px 30px 10px 20px;
+        
+    }
+    .subscribed span{
+        padding: 10px ;
+        font-size: 13px;
+    }
+}
+@media (min-width:375px) and (max-width:400px){
+    .heroSection {
+        padding: 10px ;
+        width: calc(100% - 40px);
+    }
+    .rightSide .headeing h1 {
+        font-size: 15px;
+    }
+    .rightSide .paragraph {
+        margin-bottom: 270px;
+    }
+    .rightSide .paragraph p {
+        font-size: 12px;
+    }
+    .image img {
+        object-fit: contain;
+    }
+    input {
+         padding: 10px 15px;
+         font-size: 11px;
+    }
+    button {
+        padding: 10px 40px 10px 45px;
+        font-size: 10px;
+        
+    }
+    .subscribed span{
+        padding: 10px ;
+        font-size: 10px;
+    }
+}
+@media (min-width:320px) and (max-width:350px){
+    .heroSection {
+        padding: 10px ;
+        width: calc(100% - 40px);
+    }
+    .rightSide .headeing h1 {
+        font-size: 15px;
+    }
+    .rightSide .paragraph {
+        margin-bottom: 255px;
+    }
+    .rightSide .paragraph p {
+        font-size: 12px;
+    }
+    .image img {
+        object-fit: contain;
+    }
+    input {
+         padding: 10px 10px;
+         font-size: 9px;
+    }
+    button {
+        padding: 10px 30px 10px 25px;
+        font-size: 10px;
+        
+    }
+    .subscribed span{
+        padding: 8px ;
+        font-size: 8px;
+    }
+}
